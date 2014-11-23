@@ -77,6 +77,10 @@ body{
 		@include span-columns(12);
 		border-right:20px solid $red;
 		border-bottom:20px solid $red;
+		@include media($mobile){
+			border-right:12px solid $red;
+			border-bottom:12px solid $red;
+		}
 		min-height:500px;
 		font-size:1.07em;
 		padding:14px;

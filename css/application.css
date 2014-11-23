@@ -111,3 +111,7 @@ body {
     padding: 14px; }
     body section.content:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      body section.content {
+        border-right: 12px solid #c95151;
+        border-bottom: 12px solid #c95151; } }

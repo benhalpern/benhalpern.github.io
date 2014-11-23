@@ -7,6 +7,8 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   color: #2e2e2e; }
+  body a {
+    color: #c95151; }
   body section.container {
     *zoom: 1;
     max-width: 55.5em;

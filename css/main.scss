@@ -1,0 +1,81 @@
+$red: #C95151;
+$dark-gray: #2E2E2E;
+
+
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: $dark-gray;
+	section.container {
+	  @include outer-container;
+	}
+	
+	header{
+		@include span-columns(12);
+		border-bottom:20px solid $red;
+		@include media($mobile){
+			border-bottom:12px solid $red;
+			
+		}
+			
+		.profile-pic{
+			@include span-columns(2);
+			@include media($tablet){
+				@include span-columns(1.85);
+			}
+			@include media($mobile){
+				@include span-columns(0.9);
+			}
+			img{
+				width:100%;
+				-webkit-border-top-left-radius: 10px;
+				-webkit-border-top-right-radius: 10px;
+				-moz-border-radius-topleft: 10px;
+				-moz-border-radius-topright: 10px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+		}
+		.headline{
+			@include span-columns(10);
+			@include media($tablet){
+				@include span-columns(6.15);
+			}
+			@include media($mobile){
+				@include span-columns(3.1);
+			}
+			
+			h1{
+				font-size:60px;
+				margin:0;
+				@include media($mobile){
+					font-size:30px;
+				}
+			}
+			h2{
+				margin:0;
+				font-size:1.8em;
+				
+				@include media($tablet){
+					font-size:1.2em;
+				}
+				@include media($mobile){
+					font-size:0.88em;
+				}
+			}
+		}
+		
+	}
+	
+	
+	section.content{
+		@include span-columns(12);
+		border-right:20px solid $red;
+		border-bottom:20px solid $red;
+		min-height:500px;
+		font-size:1.07em;
+		padding:14px;
+	}
+	
+	
+}

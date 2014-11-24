@@ -16,9 +16,9 @@ body{
 	section.container {
 	  @include outer-container;
 	  position: relative;
-	  top: 40%;
+	  top: 58%;
+	  opacity:0;
 	  transform: translateY(-40%);
-	  
 	
 	}
 	

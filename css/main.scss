@@ -15,10 +15,20 @@ body{
 	
 	section.container {
 	  @include outer-container;
-	  position: relative;
-	  top: 58%;
-	  opacity:0;
-	  transform: translateY(-40%);
+		
+		@include media($desktop){
+		  position: relative;
+		  top: 58%;
+		  opacity:0;
+		  transform: translateY(-40%);
+		}
+		@include media($tablet){
+			margin-top:40px;
+		}
+		@include media($mobile){
+			margin-top:0px;
+		}
+	
 	
 	}
 	

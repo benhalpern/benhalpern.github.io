@@ -1,6 +1,8 @@
 $red: #C95151;
 $dark-gray: #2E2E2E;
-
+$medium-gray: #9C9C9C;
+$light-gray: #DEDEDE;
+$lighter-gray: #F2F2F2;
 
 body{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -13,6 +15,11 @@ body{
 	
 	section.container {
 	  @include outer-container;
+	  position: relative;
+	  top: 40%;
+	  transform: translateY(-40%);
+	  
+	
 	}
 	
 	header{
@@ -33,12 +40,6 @@ body{
 			}
 			img{
 				width:100%;
-				-webkit-border-top-left-radius: 10px;
-				-webkit-border-top-right-radius: 10px;
-				-moz-border-radius-topleft: 10px;
-				-moz-border-radius-topright: 10px;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
 			}
 		}
 		.headline{
@@ -62,10 +63,10 @@ body{
 				font-size:1.8em;
 				
 				@include media($tablet){
-					font-size:1.2em;
+					font-size:1.5em;
 				}
 				@include media($mobile){
-					font-size:0.88em;
+					font-size:1em;
 				}
 			}
 		}
@@ -73,7 +74,7 @@ body{
 	}
 	
 	
-	section.content{
+	section.main{
 		@include span-columns(12);
 		border-right:20px solid $red;
 		border-bottom:20px solid $red;
@@ -81,9 +82,53 @@ body{
 			border-right:12px solid $red;
 			border-bottom:12px solid $red;
 		}
-		min-height:500px;
-		font-size:1.07em;
-		padding:14px;
+		padding:5px;
+		.content{
+			@include span-columns(8.2);
+			@include media($tablet){
+				@include span-columns(5);
+			}
+			@include media($mobile){
+				@include span-columns(4);
+			}
+			
+			
+			font-size:1.07em;
+			padding:14px;
+		}
+		.sidebar{
+			@include span-columns(3.8);
+			@include media($tablet){
+				@include span-columns(3);
+			}
+			@include media($mobile){
+				@include span-columns(4);
+			}
+			
+			a{
+				color:$medium-gray;
+				text-decoration:none;
+				&:hover{
+					color:$dark-gray;
+				};
+			}
+			.social{
+				&:hover{
+					background:$lighter-gray;
+				};
+				
+				font-size:14px;
+				padding:13px;
+				border-left:12px solid $lighter-gray;
+				&:last-child {
+				}
+				img{
+					width:40px;
+					margin-right:8px;
+					vertical-align:-12px;
+				}
+			}
+		}
 	}
 	
 	

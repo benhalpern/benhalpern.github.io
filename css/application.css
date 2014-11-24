@@ -124,7 +124,7 @@ body {
           display: block;
           float: left;
           margin-right: 3.22581%;
-          width: 61.29032%; }
+          width: 58.70968%; }
           body section.main .content:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
@@ -147,7 +147,7 @@ body {
           display: block;
           float: left;
           margin-right: 3.22581%;
-          width: 35.48387%; }
+          width: 38.06452%; }
           body section.main .sidebar:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
@@ -164,6 +164,7 @@ body {
         body section.main .sidebar a:hover {
           color: #2e2e2e; }
       body section.main .sidebar .social {
+        position: relative;
         font-size: 14px;
         padding: 13px;
         border-left: 12px solid #f2f2f2; }
@@ -173,5 +174,21 @@ body {
           width: 40px;
           margin-right: 8px;
           vertical-align: -12px; }
+        body section.main .sidebar .social .extra {
+          position: absolute;
+          top: 0;
+          left: -250px;
+          width: 250px;
+          z-index: 10;
+          background: white;
+          box-shadow: 2px 2px #9c9c9c;
+          border: 1px solid #dedede;
+          padding: 8px;
+          display: none; }
+        body section.main .sidebar .social:hover .extra {
+          display: block; }
+        @media screen and (max-width: 480px) {
+          body section.main .sidebar .social:hover .extra {
+            display: none; } }
 
 /*# sourceMappingURL=application.css.map */

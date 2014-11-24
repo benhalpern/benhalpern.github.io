@@ -12,6 +12,6 @@ $(document).ready(function(){
 
 
 function launchAnimation(){
-	$(".container").animate({"top":"38%","opacity":"1"})
+	$(".container").animate({"top":"42%","opacity":"1"})
 	
 }

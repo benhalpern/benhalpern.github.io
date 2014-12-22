@@ -5,85 +5,83 @@ $light-gray: #DEDEDE;
 $lighter-gray: #F2F2F2;
 
 body{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	color: $dark-gray;
-	
+
 	a{
 		color:$red;
 	}
-	
+
 	section.container {
 	  @include outer-container;
-		
-		@include media($desktop){
-		  position: relative;
-		  top: 58%;
-		  opacity:0;
-		  transform: translateY(-40%);
-		}
-		@include media($tablet){
-			margin-top:40px;
-		}
-		@include media($mobile){
-			margin-top:0px;
-		}
-	
-	
+		margin-top:6%;
 	}
-	
+
 	header{
 		@include span-columns(12);
 		border-bottom:20px solid $red;
 		@include media($mobile){
 			border-bottom:12px solid $red;
-			
 		}
-			
+
 		.profile-pic{
 			@include span-columns(2);
 			@include media($tablet){
-				@include span-columns(1.85);
+				@include span-columns(4);
 			}
 			@include media($mobile){
-				@include span-columns(0.9);
+				@include span-columns(4);
 			}
 			img{
 				width:100%;
+				opacity:0;
+				@include media($tablet){
+					opacity:1;
+				}
 			}
 		}
 		.headline{
 			@include span-columns(10);
 			@include media($tablet){
-				@include span-columns(6.15);
+				@include span-columns(8);
 			}
 			@include media($mobile){
-				@include span-columns(3.1);
+				@include span-columns(4);
 			}
-			
+
 			h1{
 				font-size:60px;
 				margin:0;
+				margin-left:310px;
+				@include media($tablet){
+					margin-left:0;
+					font-size:55px;
+
+				}
 				@include media($mobile){
-					font-size:30px;
+					font-size:28px;
 				}
 			}
 			h2{
 				margin:0;
 				font-size:1.8em;
-				
+				margin-left:310px;
+
 				@include media($tablet){
 					font-size:1.5em;
+					margin-left:0;
+
 				}
 				@include media($mobile){
 					font-size:1em;
 				}
 			}
 		}
-		
+
 	}
-	
-	
+
+
 	section.main{
 		@include span-columns(12);
 		border-right:20px solid $red;
@@ -101,8 +99,8 @@ body{
 			@include media($mobile){
 				@include span-columns(4);
 			}
-			
-			
+
+
 			font-size:1.07em;
 			padding:14px;
 		}
@@ -114,7 +112,7 @@ body{
 			@include media($mobile){
 				@include span-columns(4);
 			}
-			
+
 			a{
 				color:$medium-gray;
 				text-decoration:none;
@@ -127,7 +125,7 @@ body{
 				&:hover{
 					background:$lighter-gray;
 				};
-				
+
 				font-size:14px;
 				padding:13px;
 				border-left:12px solid $lighter-gray;
@@ -136,7 +134,7 @@ body{
 					margin-right:8px;
 					vertical-align:-12px;
 				}
-				
+
 				.extra{
 					position:absolute;
 					top:0;
@@ -159,10 +157,10 @@ body{
 						}
 					}
 				}
-				
+
 			}
 		}
 	}
-	
-	
+
+
 }

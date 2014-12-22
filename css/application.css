@@ -6,42 +6,31 @@
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  color: #2e2e2e; }
+  color: #2E2E2E; }
   body a {
-    color: #c95151; }
+    color: #C95151; }
   body section.container {
     *zoom: 1;
     max-width: 55.5em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 6%; }
     body section.container:before, body section.container:after {
       content: " ";
       display: table; }
     body section.container:after {
       clear: both; }
-    @media screen and (min-width: 768px) {
-      body section.container {
-        position: relative;
-        top: 58%;
-        opacity: 0;
-        transform: translateY(-40%); } }
-    @media screen and (max-width: 768px) {
-      body section.container {
-        margin-top: 40px; } }
-    @media screen and (max-width: 480px) {
-      body section.container {
-        margin-top: 0px; } }
   body header {
     display: block;
     float: left;
     margin-right: 2.12766%;
     width: 100%;
-    border-bottom: 20px solid #c95151; }
+    border-bottom: 20px solid #C95151; }
     body header:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
       body header {
-        border-bottom: 12px solid #c95151; } }
+        border-bottom: 12px solid #C95151; } }
     body header .profile-pic {
       display: block;
       float: left;
@@ -53,20 +42,24 @@ body {
         body header .profile-pic {
           display: block;
           float: left;
-          margin-right: 3.22581%;
-          width: 20.64516%; }
+          margin-right: 2.12766%;
+          width: 31.91489%; }
           body header .profile-pic:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body header .profile-pic {
           display: block;
           float: left;
-          margin-right: 6.66667%;
-          width: 17.33333%; }
+          margin-right: 2.12766%;
+          width: 31.91489%; }
           body header .profile-pic:last-child {
             margin-right: 0; } }
       body header .profile-pic img {
-        width: 100%; }
+        width: 100%;
+        opacity: 0; }
+        @media screen and (max-width: 768px) {
+          body header .profile-pic img {
+            opacity: 1; } }
     body header .headline {
       display: block;
       float: left;
@@ -78,30 +71,37 @@ body {
         body header .headline {
           display: block;
           float: left;
-          margin-right: 3.22581%;
-          width: 76.12903%; }
+          margin-right: 2.12766%;
+          width: 65.95745%; }
           body header .headline:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body header .headline {
           display: block;
           float: left;
-          margin-right: 6.66667%;
-          width: 76%; }
+          margin-right: 2.12766%;
+          width: 31.91489%; }
           body header .headline:last-child {
             margin-right: 0; } }
       body header .headline h1 {
         font-size: 60px;
-        margin: 0; }
+        margin: 0;
+        margin-left: 310px; }
+        @media screen and (max-width: 768px) {
+          body header .headline h1 {
+            margin-left: 0;
+            font-size: 55px; } }
         @media screen and (max-width: 480px) {
           body header .headline h1 {
-            font-size: 30px; } }
+            font-size: 28px; } }
       body header .headline h2 {
         margin: 0;
-        font-size: 1.8em; }
+        font-size: 1.8em;
+        margin-left: 310px; }
         @media screen and (max-width: 768px) {
           body header .headline h2 {
-            font-size: 1.5em; } }
+            font-size: 1.5em;
+            margin-left: 0; } }
         @media screen and (max-width: 480px) {
           body header .headline h2 {
             font-size: 1em; } }
@@ -110,15 +110,15 @@ body {
     float: left;
     margin-right: 2.12766%;
     width: 100%;
-    border-right: 20px solid #c95151;
-    border-bottom: 20px solid #c95151;
+    border-right: 20px solid #C95151;
+    border-bottom: 20px solid #C95151;
     padding: 5px; }
     body section.main:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
       body section.main {
-        border-right: 12px solid #c95151;
-        border-bottom: 12px solid #c95151; } }
+        border-right: 12px solid #C95151;
+        border-bottom: 12px solid #C95151; } }
     body section.main .content {
       display: block;
       float: left;
@@ -132,16 +132,16 @@ body {
         body section.main .content {
           display: block;
           float: left;
-          margin-right: 3.22581%;
-          width: 58.70968%; }
+          margin-right: 2.12766%;
+          width: 38.7234%; }
           body section.main .content:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body section.main .content {
           display: block;
           float: left;
-          margin-right: 6.66667%;
-          width: 100%; }
+          margin-right: 2.12766%;
+          width: 31.91489%; }
           body section.main .content:last-child {
             margin-right: 0; } }
     body section.main .sidebar {
@@ -155,30 +155,30 @@ body {
         body section.main .sidebar {
           display: block;
           float: left;
-          margin-right: 3.22581%;
-          width: 38.06452%; }
+          margin-right: 2.12766%;
+          width: 25.10638%; }
           body section.main .sidebar:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body section.main .sidebar {
           display: block;
           float: left;
-          margin-right: 6.66667%;
-          width: 100%; }
+          margin-right: 2.12766%;
+          width: 31.91489%; }
           body section.main .sidebar:last-child {
             margin-right: 0; } }
       body section.main .sidebar a {
-        color: #9c9c9c;
+        color: #9C9C9C;
         text-decoration: none; }
         body section.main .sidebar a:hover {
-          color: #2e2e2e; }
+          color: #2E2E2E; }
       body section.main .sidebar .social {
         position: relative;
         font-size: 14px;
         padding: 13px;
-        border-left: 12px solid #f2f2f2; }
+        border-left: 12px solid #F2F2F2; }
         body section.main .sidebar .social:hover {
-          background: #f2f2f2; }
+          background: #F2F2F2; }
         body section.main .sidebar .social img {
           width: 40px;
           margin-right: 8px;
@@ -190,8 +190,8 @@ body {
           width: 250px;
           z-index: 10;
           background: white;
-          box-shadow: 2px 2px #9c9c9c;
-          border: 1px solid #dedede;
+          box-shadow: 2px 2px #9C9C9C;
+          border: 1px solid #DEDEDE;
           padding: 8px;
           display: none; }
         body section.main .sidebar .social:hover .extra {

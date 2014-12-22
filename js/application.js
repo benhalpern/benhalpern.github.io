@@ -12,6 +12,9 @@ $(document).ready(function(){
 
 
 function launchAnimation(){
-	$(".container").animate({"top":"38%","opacity":"1"},500)
-	
+		$(".headline h1, .headline h2").animate({"margin-left":"0"},440)
+	setTimeout(function(){
+		$(".profile-pic img").animate({"opacity":"1"},1200)
+	},560)
+
 }

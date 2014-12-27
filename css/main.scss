@@ -97,12 +97,21 @@ body{
 				@include span-columns(4.8);
 			}
 			@include media($mobile){
-				@include span-columns(4);
+				width:100%;
+
 			}
-
-
 			font-size:1.07em;
 			padding:14px;
+			a.stufflink{
+				text-decoration:none;
+				background:$light-gray;
+				padding:10px;
+				line-height:40px;
+				&:hover{
+					background:darken($light-gray,5%);
+
+				}
+			}
 		}
 		.sidebar{
 			@include span-columns(3.8);
@@ -110,7 +119,7 @@ body{
 				@include span-columns(3.2);
 			}
 			@include media($mobile){
-				@include span-columns(4);
+				width:100%;
 			}
 
 			a{
@@ -131,10 +140,10 @@ body{
 				border-left:12px solid $lighter-gray;
 				img{
 					width:40px;
+					min-height:33px;
 					margin-right:8px;
 					vertical-align:-12px;
 				}
-
 				.extra{
 					position:absolute;
 					top:0;

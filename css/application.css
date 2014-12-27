@@ -138,12 +138,14 @@ body {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body section.main .content {
-          display: block;
-          float: left;
-          margin-right: 2.12766%;
-          width: 31.91489%; }
-          body section.main .content:last-child {
-            margin-right: 0; } }
+          width: 100%; } }
+      body section.main .content a.stufflink {
+        text-decoration: none;
+        background: #DEDEDE;
+        padding: 10px;
+        line-height: 40px; }
+        body section.main .content a.stufflink:hover {
+          background: #d1d1d1; }
     body section.main .sidebar {
       display: block;
       float: left;
@@ -161,12 +163,7 @@ body {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         body section.main .sidebar {
-          display: block;
-          float: left;
-          margin-right: 2.12766%;
-          width: 31.91489%; }
-          body section.main .sidebar:last-child {
-            margin-right: 0; } }
+          width: 100%; } }
       body section.main .sidebar a {
         color: #9C9C9C;
         text-decoration: none; }
@@ -181,6 +178,7 @@ body {
           background: #F2F2F2; }
         body section.main .sidebar .social img {
           width: 40px;
+          min-height: 33px;
           margin-right: 8px;
           vertical-align: -12px; }
         body section.main .sidebar .social .extra {

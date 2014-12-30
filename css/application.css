@@ -165,7 +165,7 @@ body {
       margin-right: 2.12766%;
       width: 30.21277%;
       border-left: 12px solid #F2F2F2;
-      height: 100%; }
+      min-height: 666px; }
       body section.main .sidebar:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {

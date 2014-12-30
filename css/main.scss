@@ -94,7 +94,7 @@ body{
 		.content{
 			@include span-columns(8.2);
 			@include media($tablet){
-				@include span-columns(4.8);
+				@include span-columns(6.8);
 			}
 			@include media($mobile){
 				width:100%;
@@ -102,26 +102,45 @@ body{
 			}
 			font-size:1.07em;
 			padding:14px;
+
+			h1{
+				margin:0;
+				margin-bottom:-20px;
+			}
+
 			a.stufflink{
 				text-decoration:none;
-				background:$light-gray;
 				padding:10px;
 				line-height:40px;
+				div{
+					background:$light-gray;
+					padding:6px;
+					h2{
+						margin:0;
+					}
+					h3{
+						margin:0;
+						font-size:17px;
+					}
+				}
 				&:hover{
-					background:darken($light-gray,5%);
-
+					div{
+						background:darken($light-gray,5%);
+					}
 				}
 			}
 		}
 		.sidebar{
 			@include span-columns(3.8);
 			@include media($tablet){
-				@include span-columns(3.2);
+				@include span-columns(5);
 			}
 			@include media($mobile){
 				width:100%;
 			}
 
+			border-left:12px solid $lighter-gray;
+			height:100%;
 			a{
 				color:$medium-gray;
 				text-decoration:none;
@@ -137,7 +156,6 @@ body{
 
 				font-size:14px;
 				padding:13px;
-				border-left:12px solid $lighter-gray;
 				img{
 					width:40px;
 					min-height:33px;

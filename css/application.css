@@ -141,19 +141,22 @@ body {
           width: 100%; } }
       body section.main .content h1 {
         margin: 0;
-        margin-bottom: -20px; }
+        margin-bottom: 0px; }
       body section.main .content a.stufflink {
         text-decoration: none;
         padding: 10px;
         line-height: 40px; }
         body section.main .content a.stufflink div {
           background: #DEDEDE;
-          padding: 6px; }
+          padding: 6px;
+          margin-top: -27px; }
           body section.main .content a.stufflink div h2 {
             margin: 0; }
           body section.main .content a.stufflink div h3 {
             margin: 0;
-            font-size: 17px; }
+            font-size: 17px;
+            color: black;
+            margin-top: -12px; }
         body section.main .content a.stufflink:hover div {
           background: #d1d1d1; }
     body section.main .sidebar {

@@ -105,7 +105,7 @@ body{
 
 			h1{
 				margin:0;
-				margin-bottom:-20px;
+				margin-bottom:0px;
 			}
 
 			a.stufflink{
@@ -115,12 +115,16 @@ body{
 				div{
 					background:$light-gray;
 					padding:6px;
+					margin-top:-27px;
 					h2{
 						margin:0;
 					}
 					h3{
 						margin:0;
 						font-size:17px;
+						color:black;
+						margin-top:-12px;
+
 					}
 				}
 				&:hover{

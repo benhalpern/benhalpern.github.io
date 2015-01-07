@@ -14,7 +14,7 @@ body {
     max-width: 55.5em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6%; }
+    margin-top: 20px; }
     body section.container:before, body section.container:after {
       content: " ";
       display: table; }
@@ -80,7 +80,7 @@ body {
           display: block;
           float: left;
           margin-right: 2.12766%;
-          width: 31.91489%; }
+          width: 57.44681%; }
           body header .headline:last-child {
             margin-right: 0; } }
       body header .headline h1 {
@@ -93,7 +93,7 @@ body {
             font-size: 55px; } }
         @media screen and (max-width: 480px) {
           body header .headline h1 {
-            font-size: 28px; } }
+            font-size: 27px; } }
       body header .headline h2 {
         margin: 0;
         font-size: 1.8em;
@@ -104,7 +104,7 @@ body {
             margin-left: 0; } }
         @media screen and (max-width: 480px) {
           body header .headline h2 {
-            font-size: 1em; } }
+            font-size: 0.95em; } }
   body section.main {
     display: block;
     float: left;
@@ -146,19 +146,39 @@ body {
         text-decoration: none;
         padding: 10px;
         line-height: 40px; }
-        body section.main .content a.stufflink div {
-          background: #DEDEDE;
+        body section.main .content a.stufflink div.thing {
+          background: #e6e6e6;
           padding: 6px;
-          margin-top: -27px; }
-          body section.main .content a.stufflink div h2 {
-            margin: 0; }
-          body section.main .content a.stufflink div h3 {
+          margin-top: -27px;
+          padding-left: 90px;
+          position: relative;
+          border: 1px solid #9C9C9C; }
+          body section.main .content a.stufflink div.thing .stuff-icon {
+            width: 80px;
+            height: 100%;
+            background: white;
+            position: absolute;
+            left: 0px;
+            top: 0px; }
+            body section.main .content a.stufflink div.thing .stuff-icon img {
+              width: 80px;
+              height: 80px;
+              position: relative;
+              top: 50%;
+              margin-top: -40px; }
+          body section.main .content a.stufflink div.thing h2 {
             margin: 0;
-            font-size: 17px;
+            margin-top: 0px;
+            font-size: 17px; }
+          body section.main .content a.stufflink div.thing h3 {
+            margin: 0;
+            font-size: 15px;
             color: black;
-            margin-top: -12px; }
+            margin-top: -2px;
+            margin-bottom: 9px;
+            line-height: 1.4; }
         body section.main .content a.stufflink:hover div {
-          background: #d1d1d1; }
+          background: #d9d9d9; }
     body section.main .sidebar {
       display: block;
       float: left;

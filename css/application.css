@@ -1,3 +1,5 @@
+*{outline:none;}
+
 body {
   position: relative;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -54,4 +56,29 @@ a{
 }
 .social a:hover{
   background:rgba(255, 255, 255,0.2)
+}
+
+.mailchimp-signup-form form{
+  text-align:center;
+  padding-top:25px;
+}
+
+.mailchimp-signup-form form input{
+  border:0px;
+  border-radius:100px;
+  padding:5px 10px;
+  font-size:14px;
+  max-width:160px;
+}
+
+.mailchimp-signup-form form input[type="submit"]{
+  padding:6px 9px;
+  background:rgb(25, 191, 141);
+  color:white;
+  margin-left:3px;
+  cursor:pointer;
+}
+
+.mailchimp-signup-form form input[type="submit"]:hover{
+  background:rgb(21, 201, 148);
 }

@@ -22,6 +22,7 @@ body {
   border:2px solid rgb(27, 236, 131)
 }
 
+
 header{
   text-align:center;
   font-weight:700;
@@ -39,9 +40,9 @@ hr{ width:92%;
     border:0px;
   }
 
-  .wf-loading .main,.wf-loading h1 {
+  /*.wf-loading .main,.wf-loading h1 {
       visibility: hidden;
-    }
+    }*/
 
 
 .main{
@@ -90,4 +91,58 @@ a{
 
 .mailchimp-signup-form form input[type="submit"]:hover{
   background:rgb(21, 201, 148);
+}
+
+
+
+
+/*big white*/
+
+.big-white-container{
+  position: absolute;
+  top: 46%;
+  height: 500px;
+  width: 500px;
+  margin-top: -240px;
+  left: 50%;
+  margin-left: -250px;
+  background: white;
+  color: rgb(56, 56, 56);
+  border-radius: 5px;
+}
+
+.big-white-container .social a {
+  color:rgb(154, 154, 154);
+}
+
+.big-white-container h1{
+  font-size:25px;
+}
+
+
+.big-white-container .main{
+  font-size:18px;
+}
+
+.big-white-container .mailchimp-signup-form form input{
+  border:1px solid rgb(221, 221, 221);
+  width:280px;
+  max-width:90%;
+  font-size:18px;
+  padding:8px 16px;
+  margin-bottom:10px;
+}
+
+.big-white-container .mailchimp-signup-form form input[type="submit"]{
+  border: 1px solid rgb(25, 191, 141);
+  width:150px;
+  padding:8px 9px;
+}
+
+@media (max-width: 520px) {
+  .big-white-container {
+    width:98%;
+    margin-left:0px;
+    left:1%;
+  }
 }

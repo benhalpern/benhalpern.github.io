@@ -152,5 +152,13 @@ a{
     width:98%;
     margin-left:0px;
     left:1%;
+    height: 500px;
+  }
+}
+
+@media (max-height: 520px) {
+  .big-white-container {
+    top: 0%;
+    margin-top: 30px;
   }
 }

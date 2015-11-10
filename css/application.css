@@ -5,7 +5,7 @@
 
 body {
   position: relative;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "museo-sans-rounded",sans-serif;
 }
 .container {
   position: absolute;
@@ -24,7 +24,7 @@ body {
 
 header{
   text-align:center;
-  font-weight:700px;
+  font-weight:700;
 }
 
 h1{ font-size:20px;

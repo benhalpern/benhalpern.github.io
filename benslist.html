@@ -25,7 +25,7 @@
       <div class="main">
         Hi, I'm Ben Halpern, programmer/entrepreneur. I want to share with you and elaborate on my favorite stuff I come across in my daily professional life with my new newsletter. Sign up below to get in the loop.
         <div id="clockdiv">
-          The first email will go out in <span id="countdown"></span>
+          <span id="countdown"></span>
         </div>
       </div>
       <div class="mailchimp-signup-form">
@@ -45,15 +45,15 @@
     </section>
 
     <script>
-      var deadline = 'December 31 2015 23:59:59 GMT+02:00';
-      var t = getTimeRemaining(deadline)
-      if(t['total'] > 0){
-        document.getElementById('countdown').innerHTML = t['hours']+":"+t['minutes']+":"+t['seconds']
-        setInterval(function(){
-          var t = getTimeRemaining(deadline)
-          document.getElementById('countdown').innerHTML = t['hours']+":"+t['minutes']+":"+t['seconds']
-        },1000)
-      }
+      // var deadline = 'November 21 2016 23:59:59 GMT+02:00';
+      // var t = getTimeRemaining(deadline)
+      // if(t['total'] > 0){
+      //   document.getElementById('countdown').innerHTML = 'The first email will go out in '+t['hours']+":"+t['minutes']+":"+t['seconds']
+      //   setInterval(function(){
+      //     var t = getTimeRemaining(deadline)
+      //     document.getElementById('countdown').innerHTML = 'The first email will go out in '+t['hours']+":"+t['minutes']+":"+t['seconds']
+      //   },1000)
+      // }
 
       function getTimeRemaining(endtime){
       var t = Date.parse(endtime) - Date.parse(new Date());

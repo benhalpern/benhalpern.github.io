@@ -111,6 +111,10 @@ a{
   border-radius: 5px;
 }
 
+.big-white-container a{
+  color:rgb(22, 184, 223);
+}
+
 .big-white-container .social a {
   color:rgb(154, 154, 154);
 }

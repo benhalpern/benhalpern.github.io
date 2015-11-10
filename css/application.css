@@ -10,7 +10,7 @@ body {
 .container {
   position: absolute;
   top: 46%;
-  height: 284px;
+  min-height: 284px;
   width:284px;
   margin-top: -140px;
   left:50%;
@@ -54,7 +54,7 @@ a{
 }
 .social{
   text-align:center;
-  margin-top:28px;
+  margin-top:20px;
 }
 .social a{
   padding:6px;
@@ -68,7 +68,8 @@ a{
 
 .mailchimp-signup-form form{
   text-align:center;
-  padding-top:25px;
+  padding-top:15px;
+  margin-bottom:-2px;
 }
 
 .mailchimp-signup-form form input{

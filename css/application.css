@@ -43,6 +43,12 @@ hr{ width:92%;
   padding:2% 4%;
   line-height:1.35em;
   font-size:14px;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+     -o-animation: fadein 1s; /* Opera < 12.1 */
+        animation: fadein 1s;
+
 }
 a{
   color:white;
@@ -84,4 +90,34 @@ a{
 
 .mailchimp-signup-form form input[type="submit"]:hover{
   background:rgb(21, 201, 148);
+}
+
+
+@keyframes fadein {
+  from { opacity: 0;padding-top:4%;padding-bottom:0%}
+  to   { opacity: 1;padding-top:2%;padding-bottom:2% }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0;padding-top:4%;padding-bottom:0%}
+  to   { opacity: 1;padding-top:2%;padding-bottom:2% }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0;padding-top:4%;padding-bottom:0%}
+  to   { opacity: 1;padding-top:2%;padding-bottom:2% }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0;padding-top:4%;padding-bottom:0%}
+  to   { opacity: 1;padding-top:2%;padding-bottom:2% }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0;padding-top:4%;padding-bottom:0%}
+  to   { opacity: 1;padding-top:2%;padding-bottom:2% }
 }

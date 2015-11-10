@@ -119,6 +119,10 @@ a{
   color:rgb(154, 154, 154);
 }
 
+.big-white-container .social a:hover{
+  background:rgba(232, 232, 232, 0.7)
+}
+
 .big-white-container h1{
   font-size:25px;
 }

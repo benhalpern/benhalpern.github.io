@@ -15,6 +15,11 @@ header{
   font-weight:700;
 }
 
+header img{
+  width:500px;
+  max-width:100%;
+}
+
 h1{ font-size:20px;
     margin-bottom:0;
     margin-top:10px;
@@ -33,7 +38,7 @@ hr{ width:92%;
 
 
 .main{
-  padding:2% 4%;
+  padding:1% 4%;
   line-height:1.39em;
   font-size:14px;
 }
@@ -42,7 +47,7 @@ a{
 }
 .social{
   text-align:center;
-  margin-top:20px;
+  margin:20px 0px 50px;
 }
 .social a{
   padding:6px;
@@ -59,9 +64,9 @@ a{
 /*big white*/
 
 .container{
-  height: 500px;
   width: 500px;
-  margin:160px auto;
+  max-width:100%;
+  margin:10px auto 30px;
   color: rgb(56, 56, 56);
   border-radius: 5px;
 }
@@ -85,32 +90,4 @@ a{
 
 .container .main{
   font-size:18px;
-}
-
-.container .mailchimp-signup-form form input{
-  border:1px solid rgb(221, 221, 221);
-  width:280px;
-  max-width:90%;
-  font-size:18px;
-  padding:8px 16px;
-  margin-bottom:10px;
-}
-
-.container .mailchimp-signup-form form input[type="submit"]{
-  border: 1px solid rgb(25, 191, 141);
-  width:150px;
-  padding:8px 9px;
-}
-
-@media (max-width: 520px) {
-  .container{
-    margin:80px auto;
-    width:100%;
-  }
-}
-
-@media (max-height: 480px) {
-  .container{
-    margin:50px auto;
-  }
 }

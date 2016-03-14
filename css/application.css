@@ -5,7 +5,8 @@
 
 body {
   position: relative;
-  font-family: "museo-sans-rounded",sans-serif;
+  font-family: "museo-sans-rounded","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 
 
@@ -32,18 +33,12 @@ hr{ width:92%;
     border:0px;
   }
 
-  .wf-loading .main,.wf-loading h1 {
-      visibility: hidden;
-    }
-
-
 .main{
-  padding:1% 4%;
-  line-height:1.39em;
-  font-size:14px;
+  padding:1% 5%;
 }
-a{
-  color:white;
+.main p{
+  font-size:15px;
+  line-height:1.39em;
 }
 .social{
   text-align:center;

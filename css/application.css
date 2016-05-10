@@ -7,6 +7,12 @@ body {
   position: relative;
   font-family: "museo-sans-rounded","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+  background: url(https://media.giphy.com/media/QsZZNdxnevWGA/giphy.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 
@@ -14,25 +20,15 @@ body {
 header{
   text-align:center;
   font-weight:700;
+  margin-top:30%;
 }
 
-header .img-wrapper{
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  position:relative;
-}
-.img-wrapper img{
-  position:absolute;
-  top:0;bottom:0;left:0;right:0;
-  width:100%;
-  height:100%;
-}
-
-h1{ font-size:20px;
+h1{ font-size:38px;
     margin-bottom:0;
-    margin-top:10px;
-    letter-spacing:1px}
+    margin-top:40px;
+    letter-spacing:1px;
+    color:rgb(66, 255, 0);
+  }
 
 hr{ width:92%;
     opacity:0.35;
@@ -47,6 +43,14 @@ hr{ width:92%;
 .main p{
   font-size:15px;
   line-height:1.39em;
+  background:rgb(250, 70, 189);
+  color:white;
+  padding:10px;
+  border-radius:5px;
+}
+.main p img{
+  margin:9px 0px 2px;
+  width:100%;
 }
 .social{
   text-align:center;
@@ -75,7 +79,8 @@ hr{ width:92%;
 }
 
 .container a{
-  color:rgb(22, 184, 223);
+  color:rgb(111, 227, 255);
+  text-decoration:none;
 }
 
 .container .social a {
@@ -85,11 +90,6 @@ hr{ width:92%;
 .container .social a:hover{
   background:rgba(232, 232, 232, 0.7)
 }
-
-.container h1{
-  font-size:25px;
-}
-
 
 .container .main{
   font-size:18px;

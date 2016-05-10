@@ -53,20 +53,6 @@ hr{ width:92%;
   margin:9px 0px 2px;
   width:100%;
 }
-.social{
-  text-align:center;
-  margin:20px 0px 50px;
-}
-.social a{
-  padding:6px;
-  width:20px;
-  display:inline-block;
-  border-radius:3px;
-}
-.social a:hover{
-  background:rgba(255, 255, 255,0.2)
-}
-
 
 
 /*big white*/
@@ -82,14 +68,6 @@ hr{ width:92%;
 .container a{
   color:rgb(111, 227, 255);
   text-decoration:none;
-}
-
-.container .social a {
-  color:rgb(154, 154, 154);
-}
-
-.container .social a:hover{
-  background:rgba(232, 232, 232, 0.7)
 }
 
 .container .main{

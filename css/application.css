@@ -74,6 +74,10 @@ hr{ width:92%;
   font-size:18px;
 }
 
+footer{
+  padding:5px 25px;
+}
+
 
 .bouncer, .bouncer-image {
   width: 100px;

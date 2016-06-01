@@ -144,6 +144,17 @@ footer{
   box-shadow:10px 10px 10px rgb(57, 26, 122)
 }
 
+.spokesperson{
+  position:fixed;
+  bottom:0;
+  right:5%;
+  max-width:40%;
+}
+
+.spokesperson img{
+  width:100%;
+}
+
 
 @-webkit-keyframes x {
   100% {

@@ -2,7 +2,6 @@
 
   <head>
     <title>Ben Halpern</title>
-    <link rel="stylesheet" href="css/application.css">
     <link rel="shortcut icon" type="image/png" href="./images/benpic.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -181,6 +180,15 @@
           width:100%;
         }
 
+        .floating-message{
+          position:fixed;
+          top:33%;
+          right:10%;
+          max-width:40%;
+          background:rgb(0, 255, 102);
+          font-size:30px;
+        }
+
 
         @-webkit-keyframes x {
           100% {
@@ -279,6 +287,14 @@
           Here is a cat trying to jump from one place to another.
           <img src="https://media.giphy.com/media/Ib9oGd9dLKHIc/giphy.gif" />
         </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/3oEdvcamZGTqp21zeo/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/nopqz91prOyvS/giphy.gif" />
+        </p>
 
 
 
@@ -291,9 +307,41 @@
         </a>
       </footer>
     </section>
+    <div class="floating-message" id="floating-message">
+    </div>
     <a href="https://www.youtube.com/watch?v=ItYNpywJHeM" class="spokesperson" target="_blank">
       <img src="./images/chatnow.gif" />
     </a>
+    <script>
+      var doc = document.documentElement;
+      setInterval(function(){
+        var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+        if(top < 500){
+          document.getElementById("floating-message").innerHTML = ""
+        }
+        else if(top > 500 && top < 1000){
+          document.getElementById("floating-message").innerHTML = "Friend Count"
+        }
+        else if(top > 1000 && top < 1500){
+          document.getElementById("floating-message").innerHTML = "Hope"
+        }
+        else if(top > 1500 && top < 2000){
+          document.getElementById("floating-message").innerHTML = "Tigers"
+        }
+        else if(top > 2000 && top < 2500){
+          document.getElementById("floating-message").innerHTML = "The Best Tacos"
+        }
+        else if(top > 2500 && top < 3000){
+          document.getElementById("floating-message").innerHTML = "Bee Hive"
+        }
+        else if(top > 3000 && top < 3500){
+          document.getElementById("floating-message").innerHTML = "Ringing Bells Quietly"
+        }
+
+
+      },180)
+
+    </script>
   </body>
 
 </html>

@@ -182,7 +182,7 @@
 
         .floating-message{
           position:fixed;
-          top:33%;
+          bottom:50%;
           right:10%;
           max-width:40%;
           background:rgb(0, 255, 102);
@@ -312,34 +312,50 @@
     <a href="https://www.youtube.com/watch?v=ItYNpywJHeM" class="spokesperson" target="_blank">
       <img src="./images/chatnow.gif" />
     </a>
+    <audio id="audio" preload>
+      <source src="./rawhide.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
     <script>
       var doc = document.documentElement;
+      var distance = window.pageYOffset;
+      var pauseAction;
       setInterval(function(){
-        var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-        if(top < 500){
+        var newDistance = window.pageYOffset;
+
+        if(distance == newDistance){
+          pauseAction = setTimeout(function(){
+            document.getElementById("audio").pause();
+          },500)
+
+        }
+        else{
+          clearTimeout(pauseAction);
+          document.getElementById("audio").play();
+        }
+
+        distance = newDistance;
+
+        if(newDistance < 500){
           document.getElementById("floating-message").innerHTML = ""
         }
-        else if(top > 500 && top < 1000){
+        else if(newDistance > 500 && newDistance < 1000){
           document.getElementById("floating-message").innerHTML = "Friend Count"
         }
-        else if(top > 1000 && top < 1500){
+        else if(newDistance > 1000 && newDistance < 1500){
           document.getElementById("floating-message").innerHTML = "Hope"
         }
-        else if(top > 1500 && top < 2000){
+        else if(newDistance > 1500 && newDistance < 2000){
           document.getElementById("floating-message").innerHTML = "Tigers"
         }
-        else if(top > 2000 && top < 2500){
+        else if(newDistance > 2000 && newDistance < 2500){
           document.getElementById("floating-message").innerHTML = "The Best Tacos"
         }
-        else if(top > 2500 && top < 3000){
+        else if(newDistance > 2500 && newDistance < 3000){
           document.getElementById("floating-message").innerHTML = "Bee Hive"
         }
-        else if(top > 3000 && top < 3500){
-          document.getElementById("floating-message").innerHTML = "Ringing Bells Quietly"
-        }
 
-
-      },180)
+      },150)
 
     </script>
   </body>

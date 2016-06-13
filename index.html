@@ -188,6 +188,27 @@
           background:rgb(0, 255, 102);
           font-size:30px;
         }
+        .your-ad-here{
+          position:fixed;
+          top:20%;
+          right:30%;
+          max-width:40%;
+          font-size:30px;
+          display:none;
+          background:rgb(24, 241, 215);
+          padding:5px 10px;
+          font-size:22px;
+          animation: spin 2s infinite linear;
+          -webkit-animation: spin 2s infinite linear;
+
+        }
+        .showing{
+          display:block;
+        }
+        .your-ad-link{
+          color:rgb(219, 0, 255);
+          font-weight:bold;
+        }
 
 
         @-webkit-keyframes x {
@@ -214,6 +235,19 @@
             -webkit-transform: translateY(calc(100vh - 100px));
                     transform: translateY(calc(100vh - 100px));
           }
+        }
+
+        @-moz-keyframes spin {
+            from { -moz-transform: rotate(0deg); }
+            to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+            from { -webkit-transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            from {transform:rotate(0deg);}
+            to {transform:rotate(360deg);}
         }
 
     </style>
@@ -307,6 +341,19 @@
           Here is a cat trying to jump from one place to another.
           <img src="https://media.giphy.com/media/3o72FdPFIn4VjDDfMc/giphy.gif" />
         </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/E5ktHKf8wFYaI/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/l2JJEHBBPqibk1WEg/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/riwAaDlaA3zQQ/giphy.gif" />
+        </p>
+
 
 
 
@@ -321,6 +368,12 @@
     </section>
     <div class="floating-message" id="floating-message">
     </div>
+    <a href="http://www.nooooooooooooooo.com/" class="your-ad-link" target="_blank">
+      <div class="your-ad-here" id="your-ad-here">
+        YOUR AD HERE
+      </div>
+    </a>
+
     <a href="https://www.youtube.com/watch?v=ItYNpywJHeM" class="spokesperson" target="_blank">
       <img src="./images/chatnow.gif" />
     </a>
@@ -332,6 +385,7 @@
       var doc = document.documentElement;
       var distance = window.pageYOffset;
       var pauseAction;
+      var yourAd = document.getElementById("your-ad-here")
       setInterval(function(){
         var newDistance = window.pageYOffset;
 
@@ -350,15 +404,33 @@
 
         if(newDistance < 500){
           document.getElementById("floating-message").innerHTML = ""
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
         }
         else if(newDistance > 500 && newDistance < 1000){
           document.getElementById("floating-message").innerHTML = "Friend Count"
+          if (yourAd.classList){
+            yourAd.classList.add("showing");
+          }
+          else{
+            yourAd.className += ' showing';
+          }
         }
         else if(newDistance > 1000 && newDistance < 1500){
           document.getElementById("floating-message").innerHTML = "Hope"
         }
         else if(newDistance > 1500 && newDistance < 2000){
           document.getElementById("floating-message").innerHTML = "Tigers"
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
         }
         else if(newDistance > 2000 && newDistance < 2500){
           document.getElementById("floating-message").innerHTML = "The Best Tacos"
@@ -366,6 +438,23 @@
         else if(newDistance > 2500 && newDistance < 3000){
           document.getElementById("floating-message").innerHTML = "Bee Hive"
         }
+        else if(newDistance > 3000 && newDistance < 3500){
+          document.getElementById("floating-message").innerHTML = "Frozen"
+        }
+        else if(newDistance > 3500 && newDistance < 4000){
+          document.getElementById("floating-message").innerHTML = "Strengthened Neurosis"
+        }
+        else if(newDistance > 4000 && newDistance < 4300){
+          document.getElementById("floating-message").innerHTML = "This is the Message"
+        }
+        else if(newDistance > 4200 && newDistance < 4600){
+          document.getElementById("floating-message").innerHTML = "This is the Massage"
+        }
+        else if(newDistance > 4600 && newDistance < 5000){
+          document.getElementById("floating-message").innerHTML = "This is the Message"
+        }
+
+
 
       },150)
 

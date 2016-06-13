@@ -440,6 +440,12 @@
         }
         else if(newDistance > 3000 && newDistance < 3500){
           document.getElementById("floating-message").innerHTML = "Frozen"
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
         }
         else if(newDistance > 3500 && newDistance < 4000){
           document.getElementById("floating-message").innerHTML = "Strengthened Neurosis"

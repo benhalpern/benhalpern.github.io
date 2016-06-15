@@ -35,6 +35,8 @@
           -o-background-size: cover;
           background-size: cover;
           cursor:help;
+          margin:0;
+          padding:0;
         }
         a{
           cursor:crosshair;
@@ -102,6 +104,9 @@
         footer{
           padding:5px 25px;
         }
+        footer a{
+          color:rgb(111, 227, 255);
+        }
 
 
         .bouncer, .bouncer-image {
@@ -167,6 +172,11 @@
           background:rgb(255, 0, 110);
           border-radius:5px;
           box-shadow:10px 10px 10px rgb(57, 26, 122)
+        }
+
+        .full-size img{
+          width:100%;
+          margin-bottom:300px;
         }
 
         .spokesperson{
@@ -360,12 +370,15 @@
 
 
       </div>
-      <footer>
-        <a href="/privacy">
-          Privacy Policy
-        </a>
-      </footer>
     </section>
+    <div class="full-size">
+      <img src="./images/livelovelaugh.jpg" />
+    </div>
+    <footer>
+      <a href="/privacy">
+        Privacy Policy
+      </a>
+    </footer>
     <div class="floating-message" id="floating-message">
     </div>
     <a href="http://www.nooooooooooooooo.com/" class="your-ad-link" target="_blank">
@@ -459,6 +472,10 @@
         else if(newDistance > 4600 && newDistance < 5000){
           document.getElementById("floating-message").innerHTML = "This is the Message"
         }
+        else if(newDistance > 500){
+          document.getElementById("floating-message").innerHTML = ""
+        }
+
 
 
 

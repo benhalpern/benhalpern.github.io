@@ -2,7 +2,7 @@
 
   <head>
     <title>Ben Halpern</title>
-    <link rel="shortcut icon" type="image/png" href="./images/benpic.ico"/>
+    <link rel="shortcut icon" type="image/png" href="http://people.mozilla.org/~faaborg/files/shiretoko/firefoxIcon/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <meta property="og:type" content="website" />
@@ -194,6 +194,11 @@
           width:100%;
         }
 
+        .how-it-was-built{
+          padding:5px;
+          margin:50px auto 80px;
+        }
+
         .floating-message{
           position:fixed;
           bottom:50%;
@@ -270,6 +275,7 @@
 
   <body>
     <!-- <section class="container"> -->
+    <img src="./images/chatnow2.gif" style="display:none" />
     <div class="bouncer x0">
       <a href="http://twitter.com/bendhalpern" target="_blank">
         <img class="bouncer-image y0" src="./images/twitter.png" alt="Twitter" />
@@ -384,6 +390,21 @@
       <img src="./images/openyourmind.jpg" />
       <img src="./images/icanandiwill.jpg" />
     </div>
+    <div class="how-it-was-built">
+      <h1>This website is built using HTML.</h1>
+      <h1>And love.</h1>
+      <h1>My blood, sweat and tears has built this website, and HTML.</h1>
+      <h1>Some CSS.</h1>
+      <h1>A bit of JavaScript, and blood.</h1>
+      <h1>Also sweat.</h1>
+      <h1>And tears, HTML, CSS, JavaScript.</h1>
+      <h1>A few image files.</h1>
+      <h1>And blood, sweat and tears.</h1>
+      <h1>And love.</h1>
+      <h1>And HTML.</h1>
+      <h1>Some CSS.</h1>
+      <h1>This website was not built with love.</h1>
+    </div>
     <div class="floating-message" id="floating-message">
     </div>
     <a href="http://www.nooooooooooooooo.com/" class="your-ad-link" target="_blank">
@@ -392,8 +413,8 @@
       </div>
     </a>
 
-    <a href="https://www.youtube.com/watch?v=ItYNpywJHeM" class="spokesperson" target="_blank">
-      <img src="./images/chatnow.gif" />
+    <a href="https://www.youtube.com/watch?v=ItYNpywJHeM" class="spokesperson" id="spokesperson" target="_blank">
+      <img src="./images/chatnow.gif" id="chatnowgif" />
     </a>
     <footer>
       <a href="/privacy">
@@ -482,13 +503,21 @@
         else if(newDistance > 4600 && newDistance < 5000){
           document.getElementById("floating-message").innerHTML = "This is the Message"
         }
+        else if(newDistance > 6000 && newDistance < 7000){
+          var chatImg = document.getElementById("chatnowgif");
+          var spokesPerson = document.getElementById("spokesperson");
+          chatImg.src = "./images/chatnow.gif";
+          spokesPerson.href = "https://www.youtube.com/watch?v=ItYNpywJHeM"
+        }
+        else if(newDistance > 7000 && newDistance < 8000){
+          var chatImg = document.getElementById("chatnowgif");
+          var spokesPerson = document.getElementById("spokesperson");
+          chatImg.src = "./images/chatnow2.gif";
+          spokesPerson.href = "https://www.youtube.com/watch?v=YJ86u1Voj6E"
+        }
         else if(newDistance > 500){
           document.getElementById("floating-message").innerHTML = ""
         }
-
-
-
-
       },150)
 
     </script>

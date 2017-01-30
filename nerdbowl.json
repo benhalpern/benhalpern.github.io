@@ -1,8 +1,15 @@
 {
   "name": "Nerd Bowl 2017",
-  "description": "A Super Bowl party for Ben's software friends and their software friends. No understanding or appreciation of football required. This is purely for the fun of getting together and eating guacamole (If we can still afford avocados! 😳)",
+  "description": "A Super Bowl party for Ben's software friends and their software friends. No understanding or appreciation of football required. This is purely for the fun of getting together and eating guacamole.",
   "date": "2017-02-05 18:30:00 -0500",
   "date_meta": "Come any time after 5pm",
   "location": "609 St Johns Pl, apt 1B, Brooklyn, 11238",
-  "what_to_bring": "Some drinks or some snacks, or both"
+  "what_to_bring": "Some drinks or some party food/snacks, or both.",
+  "host": "Ben Halpern (@bendhalpern on Twitter)",
+  "host_contact": {
+                    "email":"bendhalpern@gmail.com",
+                    "phone":"347-451-9754",
+                    "other":"Open Twitter DMs"
+                  },
+  "more_info": "Really, no appreciation of the game required. This will be a fun gathering at my place. You're also welcome to bring non-computer-nerd plus-ones."
 }

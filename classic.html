@@ -1,0 +1,582 @@
+<html>
+
+  <head>
+    <title>Ben Halpern</title>
+    <link rel="shortcut icon" type="image/png" href="http://people.mozilla.org/~faaborg/files/shiretoko/firefoxIcon/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://benhalpern.com/" />
+        <meta property="og:title" content="Ben Halpern" />
+        <meta property="og:image" content="http://benhalpern.com/images/semanticversioningismypassion.png" />
+        <meta property="og:description" content="To the world you are one person, but to one person you could mean the world." />
+        <meta property="og:site_name" content="Ben Halpern" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@bendhalpern">
+        <meta name="twitter:title" content="Ben Halpern">
+        <meta name="twitter:description" content="To the world you are one person, but to one person you could mean the world..">
+        <meta name="twitter:image:src" content="http://benhalpern.com/images/semanticversioningismypassion.png">
+    <style>
+        *{
+          outline:none;
+          -webkit-appearance:none;
+        }
+
+        body {
+          position: relative;
+          font-family: "Lucida Console", Monaco, monospace;
+          font-weight: 300;
+          background: #fbb9f5 url(https://media.giphy.com/media/QsZZNdxnevWGA/giphy.gif) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          cursor:help;
+          margin:0;
+          padding:0;
+        }
+        a{
+          cursor:crosshair;
+        }
+
+
+
+        header{
+          text-align:center;
+          font-weight:700;
+          margin-top:5%;
+        }
+
+        h1{ font-size:35px;
+            margin-bottom:0;
+            margin-top:40px;
+            letter-spacing:1px;
+            color:rgb(66, 255, 0);
+          }
+
+        hr{ width:92%;
+            opacity:1;
+            background:rgb(55, 255, 219);
+            height:4px;
+            border:0px;
+            border-radius:20px;
+          }
+
+        .main{
+          padding:1% 4%;
+        }
+        .main p{
+          font-size:15px;
+          line-height:1.39em;
+          background:rgb(250, 70, 189);
+          color:white;
+          padding:10px;
+          border-radius:5px;
+        }
+        .main p img{
+          margin:9px 0px 2px;
+          width:100%;
+        }
+
+
+        /*big white*/
+
+        .container{
+          width: 555px;
+          max-width:100%;
+          margin:10px 0px 30px;
+          color: rgb(56, 56, 56);
+          border-radius: 5px;
+        }
+
+        .container a{
+          color:rgb(111, 227, 255);
+          text-decoration:none;
+        }
+
+        .container .main{
+          font-size:18px;
+        }
+
+        footer{
+          padding:5px 25px;
+          background:rgb(255, 0, 61);
+          position:relative;
+          z-index:5;
+        }
+        footer a{
+          color:rgb(111, 227, 255);
+        }
+
+
+        .bouncer, .bouncer-image {
+          width: 100px;
+          height: 100px;
+        }
+
+        .bouncer {
+          position:absolute;
+          -webkit-animation: x 5s linear infinite alternate;
+                  animation: x 5s linear infinite alternate;
+        }
+
+        .bouncer-image {
+          padding:10px;
+          -webkit-animation: y 3s linear infinite alternate;
+                  animation: y 3s linear infinite alternate;
+        }
+
+        .x0{
+          -webkit-animation: x 5s linear infinite alternate;
+                  animation: x 5s linear infinite alternate;
+        }
+        .x1{
+          -webkit-animation: x 4s linear infinite alternate;
+                  animation: x 4s linear infinite alternate;
+        }
+        .x2{
+          -webkit-animation: x 3s linear infinite alternate;
+                  animation: x 3s linear infinite alternate;
+        }
+        .x3{
+          -webkit-animation: x 2s linear infinite alternate;
+                  animation: x 2s linear infinite alternate;
+        }
+        .y0{
+          -webkit-animation: y 2s linear infinite alternate;
+                  animation: y 2s linear infinite alternate;
+        }
+
+        .y1{
+          -webkit-animation: y 4s linear infinite alternate;
+                  animation: y 4s linear infinite alternate;
+        }
+        .y2{
+          -webkit-animation: y 5s linear infinite alternate;
+                  animation: y 5s linear infinite alternate;
+        }
+        .y3{
+          -webkit-animation: y 6s linear infinite alternate;
+                  animation: y 6s linear infinite alternate;
+        }
+
+
+        .bouncer:hover,.bouncer-image:hover
+        {
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+        .bouncer-image:hover{
+          background:rgb(255, 0, 110);
+          border-radius:5px;
+          box-shadow:10px 10px 10px rgb(57, 26, 122)
+        }
+
+        .full-size img{
+          width:100%;
+          position:relative;
+          z-index:5;
+        }
+
+        .spokesperson{
+          position:fixed;
+          bottom:0;
+          right:5%;
+          max-width:40%;
+        }
+
+        .pokemon{
+          text-align:center;
+        }
+
+        .pokemon img{
+          margin:20px;
+          width:calc(100% - 48px);
+          height:auto;
+          max-width:380px;
+
+        }
+
+        .spokesperson img{
+          width:100%;
+        }
+
+        .how-it-was-built{
+          padding:5px;
+          margin:50px auto 80px;
+        }
+
+        .floating-message{
+          position:fixed;
+          bottom:50%;
+          right:10%;
+          max-width:40%;
+          background:rgb(0, 255, 102);
+          font-size:30px;
+        }
+        .your-ad-here{
+          position:fixed;
+          top:20%;
+          right:30%;
+          max-width:40%;
+          font-size:30px;
+          display:none;
+          background:rgb(24, 241, 215);
+          padding:5px 10px;
+          font-size:22px;
+          animation: spin 2s infinite linear;
+          -webkit-animation: spin 2s infinite linear;
+
+        }
+        .showing{
+          display:block;
+        }
+        .your-ad-link{
+          color:rgb(219, 0, 255);
+          font-weight:bold;
+        }
+
+
+        @-webkit-keyframes x {
+          100% {
+            -webkit-transform: translateX(calc(100vw - 100px));
+                    transform: translateX(calc(100vw - 100px));
+          }
+        }
+
+        @keyframes x {
+          100% {
+            -webkit-transform: translateX(calc(100vw - 100px));
+                    transform: translateX(calc(100vw - 100px));
+          }
+        }
+        @-webkit-keyframes y {
+          100% {
+            -webkit-transform: translateY(calc(100vh - 100px));
+                    transform: translateY(calc(100vh - 100px));
+          }
+        }
+        @keyframes y {
+          100% {
+            -webkit-transform: translateY(calc(100vh - 100px));
+                    transform: translateY(calc(100vh - 100px));
+          }
+        }
+
+        @-moz-keyframes spin {
+            from { -moz-transform: rotate(0deg); }
+            to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+            from { -webkit-transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            from {transform:rotate(0deg);}
+            to {transform:rotate(360deg);}
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+    <!-- <section class="container"> -->
+    <img src="./images/chatnow2.gif" style="display:none" />
+    <div class="bouncer x0">
+      <a href="http://twitter.com/bendhalpern" target="_blank">
+        <img class="bouncer-image y0" src="./images/twitter.png" alt="Twitter" />
+      </a>
+    </div>
+    <div class="bouncer x1">
+      <a href="http://facebook.com/501097736" target="_blank">
+        <img class="bouncer-image y1" src="./images/facebook.png" alt="Facebook" />
+      </a>
+    </div>
+    <div class="bouncer x2">
+      <a href="https://www.linkedin.com/pub/ben-halpern/31/aa7/3a1" target="_blank">
+        <img class="bouncer-image y2" src="./images/linkedin.png" alt="Linkedin" />
+      </a>
+    </div>
+    <div class="bouncer x3">
+      <a href="https://github.com/benhalpern" target="_blank">
+        <img class="bouncer-image y3" src="./images/github.png" alt="Github" />
+      </a>
+    </div>
+
+    <section class="container">
+      <header>
+        <h1>Ben Halpern's website</h1>
+        <hr />
+      </header>
+      <div class="main">
+        <p>
+          Hi, I'm Ben. I'm the creator and co-founder of <a href="https://www.forem.com">Forem</a>. If you want to contact me, email <a href="mailto:bendhalpern@gmail.com">bendhalpern@gmail.com</a> or through the social media.
+        </p>
+        <p>
+          Check out some of my blog posts at <a href="https://dev.to/ben">dev.to/ben</a>
+        </p>
+        <p>Here is a link to nothing: <a href="http://localhost:3000/" target="_blank">localhost:3000</a></p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media2.giphy.com/media/Jd5YlXOVTcQtW/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media0.giphy.com/media/l3V0oy6RsKPhfCNk4/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/bTWsoGcbnUNwI/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media4.giphy.com/media/dQvOfD8d4MVTG/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media1.giphy.com/media/ghyzTrYWHCVCE/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media3.giphy.com/media/dLwB8eG7wwUDe/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media2.giphy.com/media/5xrkJe3IJKSze/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/Ib9oGd9dLKHIc/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/3oEdvcamZGTqp21zeo/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/nopqz91prOyvS/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/xT8qBkqPvuA8ajpMl2/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/3SCKnFChtClxK/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/3o72FdPFIn4VjDDfMc/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/E5ktHKf8wFYaI/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/l2JJEHBBPqibk1WEg/giphy.gif" />
+        </p>
+        <p>
+          Here is a cat trying to jump from one place to another.
+          <img src="https://media.giphy.com/media/riwAaDlaA3zQQ/giphy.gif" />
+        </p>
+
+
+
+
+
+
+      </div>
+    </section>
+    <div class="full-size">
+      <img src="./images/livelovelaugh.jpg" />
+      <img src="./images/hardestclimb.jpg" />
+      <img src="./images/inspirational_quote_dreams.jpg" />
+      <img src="./images/follow.jpg" />
+      <img src="./images/priv.jpg" />
+      <img src="./images/openyourmind.jpg" />
+      <img src="./images/icanandiwill.jpg" />
+      <img src="./images/inspi.jpg" />
+      <img src="./images/less.jpg" />
+      <img src="./images/quiet.jpg" />
+    </div>
+    <div class="how-it-was-built">
+      <h1>This website is built using HTML.</h1>
+      <h1>And love.</h1>
+      <h1>My blood, sweat and tears has built this website, and HTML.</h1>
+      <h1>Some CSS.</h1>
+      <h1>A bit of JavaScript, and blood.</h1>
+      <h1>Also sweat.</h1>
+      <h1>And tears, HTML, CSS, JavaScript.</h1>
+      <h1>A few image files.</h1>
+      <h1>And blood, sweat and tears.</h1>
+      <h1>And love.</h1>
+      <h1>And HTML.</h1>
+      <h1>Some CSS.</h1>
+      <h1>This website was not built with love.</h1>
+    </div>
+    <div class="pokemon">
+      <img src="./images/jynx1.png" />
+      <img src="./images/jynx2.png" />
+      <img src="./images/jynx3.png" />
+      <img src="./images/jynx4.jpg" />
+      <img src="./images/jynx5.jpg" />
+      <img src="./images/jynx6.gif" />
+      <img src="./images/jynx7.gif" />
+      <img src="./images/jynx14.gif" />
+      <img src="./images/jynx8.png" />
+      <img src="./images/jynx9.gif" />
+      <img src="./images/jynx10.gif" />
+      <img src="./images/jynx11.jpg" />
+      <img src="./images/jynx12.jpg" />
+      <img src="./images/jynx13.jpg" />
+      <img src="./images/jynx15.png" />
+      <img src="./images/jynx16.jpg" />
+      <img src="./images/jynx17.png" />
+      <img src="./images/jynx18.jpg" />
+    </div>
+    <div class="full-size">
+      <img src="http://static1.businessinsider.com/image/50aa495becad044b7d00001e/-1-8.gif" />
+    </div>
+    <div class="pokemon">
+      <img src="./images/room1.gif" />
+      <img src="./images/room3.gif" />
+      <img src="./images/room4.gif" />
+      <img src="./images/room5.gif" />
+      <img src="./images/room6.gif" />
+      <img src="./images/room7.gif" />
+      <img src="./images/room8.gif" />
+      <img src="./images/room2.gif" />
+      <img src="./images/room9.gif" />
+      <img src="./images/room10.gif" />
+      <img src="./images/room11.gif" />
+      <img src="./images/room12.gif" />
+      <img src="./images/room13.gif" />
+      <img src="./images/room14.gif" />
+      <img src="./images/room15.gif" />
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+    <div class="floating-message" id="floating-message">
+    </div>
+    <a href="http://www.nooooooooooooooo.com/" class="your-ad-link" target="_blank">
+      <div class="your-ad-here" id="your-ad-here">
+        YOUR AD HERE
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=G7RgN9ijwE4" class="spokesperson" id="spokesperson" target="_blank">
+      <img src="./images/chatnow.gif" id="chatnowgif" />
+    </a>
+    <footer>
+      <a href="/privacy">
+        Privacy Policy
+      </a>
+
+    </footer>
+    <audio id="audio" preload>
+      <source src="./rawhide.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+    <script>
+      var doc = document.documentElement;
+      var distance = window.pageYOffset;
+      var pauseAction;
+      var yourAd = document.getElementById("your-ad-here")
+      setInterval(function(){
+        var newDistance = window.pageYOffset;
+
+        if(distance == newDistance){
+          pauseAction = setTimeout(function(){
+            document.getElementById("audio").pause();
+          },400)
+
+        }
+        else{
+          clearTimeout(pauseAction);
+          document.getElementById("audio").play();
+        }
+
+        distance = newDistance;
+
+        if(newDistance < 500){
+          document.getElementById("floating-message").innerHTML = ""
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+        else if(newDistance > 500 && newDistance < 1000){
+          document.getElementById("floating-message").innerHTML = "Friend Count"
+          if (yourAd.classList){
+            yourAd.classList.add("showing");
+          }
+          else{
+            yourAd.className += ' showing';
+          }
+        }
+        else if(newDistance > 1000 && newDistance < 1500){
+          document.getElementById("floating-message").innerHTML = "Hope"
+        }
+        else if(newDistance > 1500 && newDistance < 2000){
+          document.getElementById("floating-message").innerHTML = "Tigers"
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+        else if(newDistance > 2000 && newDistance < 2500){
+          document.getElementById("floating-message").innerHTML = "The Best Tacos"
+        }
+        else if(newDistance > 2500 && newDistance < 3000){
+          document.getElementById("floating-message").innerHTML = "Bee Hive"
+        }
+        else if(newDistance > 3000 && newDistance < 3500){
+          document.getElementById("floating-message").innerHTML = "Frozen"
+          if (yourAd.classList){
+            yourAd.classList.remove("showing");
+          }
+          else{
+            yourAd.className = yourAd.className.replace(new RegExp('(^|\\b)' + "showing".split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+          }
+        }
+        else if(newDistance > 3500 && newDistance < 4000){
+          document.getElementById("floating-message").innerHTML = "Strengthened Neurosis"
+        }
+        else if(newDistance > 4000 && newDistance < 4300){
+          document.getElementById("floating-message").innerHTML = "This is the Message"
+        }
+        else if(newDistance > 4200 && newDistance < 4600){
+          document.getElementById("floating-message").innerHTML = "This is the Massage"
+        }
+        else if(newDistance > 4600 && newDistance < 5000){
+          document.getElementById("floating-message").innerHTML = "This is the Message"
+        }
+        else if(newDistance > 5000 && newDistance < 7000){
+          var chatImg = document.getElementById("chatnowgif");
+          var spokesPerson = document.getElementById("spokesperson");
+          chatImg.src = "./images/chatnow.gif";
+          spokesPerson.href = "https://www.youtube.com/watch?v=G7RgN9ijwE4"
+        }
+        else if(newDistance > 7000 && newDistance < 9000){
+          var chatImg = document.getElementById("chatnowgif");
+          var spokesPerson = document.getElementById("spokesperson");
+          chatImg.src = "./images/chatnow2.gif";
+          spokesPerson.href = "https://www.youtube.com/watch?v=YJ86u1Voj6E"
+        }
+        else if(newDistance > 500){
+          document.getElementById("floating-message").innerHTML = ""
+        }
+      },150)
+
+    </script>
+  </body>
+
+</html>
